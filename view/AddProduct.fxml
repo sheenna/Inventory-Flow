@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="addProductAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/16" fx:controller="controller.AddProduct">
+    <children>
+        <Label fx:id="addProductIDLabel" layoutX="30.0" layoutY="156.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" text="ID">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="addProductNameLabel" layoutX="30.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" text="Name">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="addProductInvLabel" layoutX="30.0" layoutY="266.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" text="Inv">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="addProductIDTextField" layoutX="79.0" layoutY="153.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="140.0"/>
+        <TextField fx:id="addProductNameTextField" layoutX="79.0" layoutY="208.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="140.0"/>
+        <TextField fx:id="addProductInvTextField" layoutX="79.0" layoutY="263.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="99.0"/>
+        <Label fx:id="addProductPriceLabel" layoutX="30.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" text="Price">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="addProductMinLabel" layoutX="30.0" layoutY="376.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" text="Min">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="addProductPriceTextField" layoutX="79.0" layoutY="317.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="99.0"/>
+        <TextField fx:id="addProductMinTextField" layoutX="79.0" layoutY="373.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="62.0"/>
+        <Label fx:id="addProductMaxLabel" layoutX="160.0" layoutY="376.0" maxHeight="-Infinity" maxWidth="-Infinity"
+               minHeight="-Infinity" minWidth="-Infinity" text="Max">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="addProductMaxTextField" layoutX="203.0" layoutY="373.0" maxHeight="-Infinity"
+                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="62.0"/>
+        <TableView fx:id="addProductTableViewA" layoutX="295.0" layoutY="97.0" prefHeight="161.0" prefWidth="475.0">
+            <columns>
+                <TableColumn fx:id="addProductIDColumnA" prefWidth="50.0" text="ID"/>
+                <TableColumn fx:id="addProductNameColumnA" prefWidth="195.0" text="Name"/>
+                <TableColumn fx:id="addProductInventoryLevelColumnA" prefWidth="115.0" text="Inventory Level"/>
+                <TableColumn fx:id="addProductPricePerUnitColumnA" prefWidth="115.0" text="Price Per Unit"/>
+            </columns>
+        </TableView>
+        <Button fx:id="addProductAddButton" layoutX="694.0" layoutY="265.0" mnemonicParsing="false"
+                onAction="#addProductAdd" prefHeight="25.0" prefWidth="75.0" text="Add">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+        <TableView fx:id="addProductTableViewB" layoutX="295.0" layoutY="308.0" prefHeight="161.0" prefWidth="475.0">
+            <columns>
+                <TableColumn fx:id="addProductIDColumnB" prefWidth="50.0" text="ID"/>
+                <TableColumn fx:id="addProductNameColumnB" prefWidth="195.0" text="Name"/>
+                <TableColumn fx:id="addProductInventoryLevelColumnB" prefWidth="115.0" text="Inventory Level"/>
+                <TableColumn fx:id="addProductPricePerUnitColumnB" prefWidth="115.0" text="Price Per Unit"/>
+            </columns>
+        </TableView>
+        <Button fx:id="addProductDeleteButton" layoutX="694.0" layoutY="476.0" mnemonicParsing="false"
+                onAction="#addProductDelete" prefHeight="25.0" prefWidth="75.0" text="Delete">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="addProductSaveButton" layoutX="520.0" layoutY="543.0" mnemonicParsing="false"
+                onAction="#addProductSave" prefHeight="30.0" prefWidth="85.0" text="Save">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="addProductCancelButton" layoutX="661.0" layoutY="543.0" mnemonicParsing="false"
+                onAction="#addProductReturn" prefHeight="30.0" prefWidth="85.0" text="Cancel">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+        <Label fx:id="addProductTitleLabel" layoutX="35.0" layoutY="42.0" text="Add Product">
+            <font>
+                <Font name="Segoe UI Semilight" size="30.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="addProductSearchTextField" layoutX="296.0" layoutY="60.0" onAction="#addProductSearchBar"
+                   prefHeight="26.0" prefWidth="391.0" promptText="Search by Part Name or Part ID"/>
+        <Button fx:id="addProductSearchButton" layoutX="705.0" layoutY="60.0" mnemonicParsing="false"
+                onAction="#addProductSearch" prefHeight="25.0" prefWidth="65.0" text="Search">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

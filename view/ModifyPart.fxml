@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="modifyPartAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/16" fx:controller="controller.ModifyPart">
+    <children>
+        <Label fx:id="modifyPartTitleLabel" layoutX="25.0" layoutY="32.0" text="Modify Part">
+            <font>
+                <Font name="Segoe UI Semilight" size="30.0"/>
+            </font>
+        </Label>
+        <RadioButton fx:id="modifyPartInHouseRadioButton" layoutX="343.0" layoutY="40.0" mnemonicParsing="false"
+                     onAction="#inHouseRadioButton" text="In-house">
+            <font>
+                <Font name="Segoe UI" size="15.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="modifyPartOutsourcedRadioButton" layoutX="515.0" layoutY="40.0" mnemonicParsing="false"
+                     onAction="#outsourcedRadioButton" text="Outsourced">
+            <font>
+                <Font name="Segoe UI" size="15.0"/>
+            </font>
+        </RadioButton>
+        <Label fx:id="modifyPartIDLabel" layoutX="100.0" layoutY="125.0" text="ID">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="modifyPartNameLabel" layoutX="100.0" layoutY="180.0" text="Name">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="modifyPartInvLabel" layoutX="100.0" layoutY="235.0" text="Inv">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="modifyPartIDTextField" layoutX="225.0" layoutY="122.0" prefHeight="25.0" prefWidth="275.0"/>
+        <TextField fx:id="modifyPartNameTextField" layoutX="225.0" layoutY="175.0" prefHeight="25.0" prefWidth="275.0"/>
+        <TextField fx:id="modifyPartInvTextField" layoutX="225.0" layoutY="230.0" prefHeight="25.0" prefWidth="275.0"/>
+        <Label fx:id="modifyPartPriceCostLabel" layoutX="100.0" layoutY="289.0" text="Price/Cost">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="modifyPartMinLabel" layoutX="100.0" layoutY="345.0" text="Min">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="modifyPartTypeLabel" layoutX="100.0" layoutY="402.0" text="Company Name">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="modifyPartPriceCostTextField" layoutX="225.0" layoutY="286.0" prefHeight="25.0"
+                   prefWidth="275.0"/>
+        <TextField fx:id="modifyPartMinTextField" layoutX="225.0" layoutY="342.0" prefHeight="25.0" prefWidth="150.0"/>
+        <TextField fx:id="modifyPartMaxTextField" layoutX="540.0" layoutY="343.0" prefHeight="25.0" prefWidth="150.0"/>
+
+        <Label fx:id="modifyPartMaxLabel" layoutX="415.0" layoutY="346.0" text="Max">
+            <font>
+                <Font name="Segoe UI" size="14.0"/>
+            </font>
+        </Label>
+
+        <TextField fx:id="modifyPartTypeTextField" layoutX="225.0" layoutY="398.0" prefHeight="25.0" prefWidth="275.0"/>
+        <Button fx:id="modifyPartSaveButton" layoutX="521.0" layoutY="530.0" mnemonicParsing="false"
+                onAction="#modifyPartSave" prefHeight="30.0" prefWidth="85.0" text="SAVE">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="modifyPartCancelButton" layoutX="662.0" layoutY="530.0" mnemonicParsing="false"
+                onAction="#modifyPartReturn" prefHeight="30.0" prefWidth="85.0" text="CANCEL">
+            <font>
+                <Font name="Segoe UI Semilight" size="12.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
