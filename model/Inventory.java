@@ -17,7 +17,7 @@ public class Inventory {
      * Adds part
      * @param newPart part
      */
-    public static void addPart(Part newPart) { //might have to be newPart not part
+    public static void addPart(Part newPart) { 
         allParts.add(newPart);
     }
 
@@ -25,7 +25,7 @@ public class Inventory {
      * Adds product
      * @param newProduct
      */
-    public static void addProduct(Product newProduct) { //might have to be newProduct not newProduct
+    public static void addProduct(Product newProduct) {
         allProducts.add(newProduct);
     }
 
@@ -141,10 +141,9 @@ public class Inventory {
         return allProducts;
     }
 
-    //Methods I wrote outside of the UML diagram.
 
     /**
-     * In order to auto-generate new Part IDs, I take the part ID of the last part in the array and increment by one.
+     * In order to auto-generate new Part IDs, take the part ID of the last part in the array and increment.
      * Incrementing is done in the controller classes, as this method is solely for getting the last part ID.
      * @return int
      */
@@ -158,7 +157,7 @@ public class Inventory {
     }
 
     /**
-     * In order to auto-generate new Product IDs, I take the part ID of the last part in the array and increment by one.
+     * In order to auto-generate new Product IDs, take the part ID of the last part in the array and increment.
      * Incrementing is done in the controller classes, as this method is solely for getting the last product ID.
      * @return int
      */
@@ -172,7 +171,7 @@ public class Inventory {
     }
 
     /**
-     * Test data made for testing purposes.
+     * Test data.
      */
     public static void addTestData() {
 

@@ -164,10 +164,9 @@ public class Product {
         return this.associatedParts;
     }
 
-    //Methods I wrote outside of UML diagram
 
     /**
-     * A quick way to tell if a product has any associated parts.
+     * A quick method to tell if a product has any associated parts.
      * @param selectedProduct product being passed as a parameter
      * @return boolean
      */

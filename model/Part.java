@@ -5,7 +5,7 @@ package model;
  */
 
 /**
- * @author Sheenna Kohoutek-Lee
+ * @author Sheenna Lee
  */
 
 public abstract class Part {
