@@ -8,6 +8,10 @@ import javafx.stage.Stage;
 import model.Inventory;
 
 
+/** This class creates an application that manages products and parts as part of an inventory management program.
+ * This file is the Main file that begins the application.
+ */
+ 
 public class Main extends Application {
 
     
