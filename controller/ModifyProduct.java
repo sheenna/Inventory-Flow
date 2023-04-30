@@ -284,12 +284,6 @@ public class ModifyProduct implements Initializable {
 
         tempPartBasket = product.getAllAssociatedParts();
 
-        /** RUNTIME ERROR
-         * I was struggling with having the associated parts not staying saved to the product. I changed the way I
-         * approached the issue, and considered it like a temporary shopping basket at the grocery store where you're
-         * putting everything you want in it, but you still haven't decided whether you want everything just yet.
-         * (In this analogy, the Save button is the check-out counter).
-         */
         modifyProductTableViewB.setItems(tempPartBasket);
 
 
